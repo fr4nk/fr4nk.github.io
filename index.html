@@ -3,7 +3,7 @@ title: HALLO WELT!
 ---
 <html>
 <body><head>
-  <title>{{%if page.title %} {page.title} {% else %} {site.title} {% endif %}}</title>
+  <title>{{% if page.title %}} {{page.title}} {{% else %}} {{site.title}} {{% endif %}}</title>
 </head>
   <h1>Hallo Welt!</h1>
   <h2>{{page.author}}</h2>
