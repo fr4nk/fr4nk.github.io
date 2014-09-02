@@ -8,6 +8,17 @@ title: HALLO WELT!
   <h1>Hallo Welt!</h1>
   <h2>{{page.author}}</h2>
 <p>Willkommen ... </p>
+
+<h2> Liste der Posts:</h2>
+<div id='posts'>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</div>
 </body>
 
 </html>
