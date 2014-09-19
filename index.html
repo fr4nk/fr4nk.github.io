@@ -1,13 +1,8 @@
 ---
 title: HALLO WELT!
+layout: default
 ---
-<html>
-<body><head>
-  <title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
-</head>
-  <h1>Hallo Welt!</h1>
-  <h2>{{page.author}}</h2>
-<p>Willkommen ... </p>
+
 
 <h2> Liste der Posts:</h2>
 <div id='posts'>
@@ -17,8 +12,6 @@ title: HALLO WELT!
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
   {% endfor %}
-</ul>
-</div>
-</body>
+<\ul>
+<\div>
 
-</html>
