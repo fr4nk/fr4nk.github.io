@@ -1,11 +1,11 @@
 <doctype html>
 <html>
 <head>
-  <title>{% if post.title %} {{post.title}} {% else %} {{site.title}} {% endif %}</title>
+  <title>{% if page.title %} {{page.title}} {% else %} {{site.title}} {% endif %}</title>
 </head>
 <body>
-  <h1>{% if post.title %} {{post.title}} vom {{post.date | date "%-d.%m.%Y (KW %W) um %R" }} {% else %} {{site.title}} {% endif %}</h1>
-  {% if post.author %} <h2>{{post.author}}</h2> {% endif %}
+  <h1>{% if page.title %} {{page.title}} vom {{page.date | date "%-d.%m.%Y (KW %W) um %R" }} {% else %} {{site.title}} {% endif %}</h1>
+  {% if page.author %} <h2>{{page.author}}</h2> {% endif %}
   
   <div id="inhalt">
     {{ content }}
