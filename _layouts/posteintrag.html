@@ -1,0 +1,15 @@
+<doctype html>
+<html>
+<head>
+  <title>{% if post.title %} {{post.title}} {% else %} {{site.title}} {% endif %}</title>
+</head>
+<body>
+  <h1>{% if post.title %} {{post.title}} {% else %} {{site.title}} {% endif %}</h1>
+  {% if post.author %} <h2>{{post.author}}</h2> {% endif %}
+  
+  <div id="inhalt">
+    {{ content }}
+  </div>
+</body>
+
+</html>
