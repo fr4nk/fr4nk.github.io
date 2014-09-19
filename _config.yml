@@ -6,12 +6,12 @@ defaults:
     scope:
       path: ""  # Alle Dateien
       type: "pages"
-    value:      
+    values:      
       layout: "default"
   - 
     scope:
       path: ""  # Alle Dateien
       type: "posts"
-    value:      
+    values:      
       layout: "posteintrag"
 
