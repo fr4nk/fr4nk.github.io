@@ -10,7 +10,11 @@
   <header>
     <ul>
 		{% for seite in site.pages %}
-	    <li><a href="{{seite.url}}"> {{seite.title}}</a></li>
+		  {% if seite.url = page.url %}
+		    <li class="current"><span> {{seite.title}}</span></li>
+		  {% else %}
+	        <li><a href="{{seite.url}}"> {{seite.title}}</a></li>
+	      {%endif%}
 		{% endfor %}
 	</ul>
   </header>
