@@ -1,5 +1,5 @@
 ---
-title: Frank Mattes, Solution Designer (fr4nk.github.io)
+title: Änderungs-Log
 author: postfach@frankmattes.de
 markdown: kramdown
 ---
